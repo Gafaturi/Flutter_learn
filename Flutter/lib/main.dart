@@ -1,33 +1,8 @@
 import 'package:flutter/material.dart';
+import 'models/person.dart';
 
 void main() => runApp(const MyApp());
 
-// КЛАС Person
-class Person {
-  // Приватні поля (доступні лише всередині класу)
-  String _name;
-  String _surname;
-
-  // Конструктор з іменованими параметрами
-  Person({required String name, required String surname})
-      : _name = name,
-        _surname = surname;
-
-  // Геттер для імені
-  String get name => _name;
-
-  // Сетер для імені
-  set name(String value) => _name = value;
-
-  // Геттер для прізвища
-  String get surname => _surname;
-
-  // Сетер для прізвища
-  set surname(String value) => _surname = value;
-
-  // Геттер для повного імені
-  String get fullName => '$_name $_surname';
-}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
